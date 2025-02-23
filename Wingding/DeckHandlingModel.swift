@@ -11,16 +11,16 @@ public class DeckOfCards {
     public private(set) var deckName: String
     public private(set) var totalCards: Int
     // An array of card inde values
-    private var randomized: [Int] = []
+    private var randomizedCards: [Int] = []
     
     init(_ deckName: String, totalCards: Int) {
         self.deckName = deckName
         self.totalCards = totalCards
-        self.randomized = Array(1...totalCards).shuffled()
+        self.randomizedCards = Array(1...totalCards).shuffled()
     }
     
     public var cardsRemaining: Int {
-        return randomized.count
+        return randomizedCards.count
     }
     
     public func removeCards(_ count: Int) -> Int { // Return how many cards removed
@@ -30,11 +30,11 @@ public class DeckOfCards {
         // easier to undertand at least.
         var numberOfCardsRemoved = count
 
-        if count <= randomized.count {
-            randomized.removeSubrange(0..<count)
+        if count <= randomizedCards.count {
+            randomizedCards.removeSubrange(0..<count)
         } else {
-            numberOfCardsRemoved = randomized.count
-            randomized.removeAll()
+            numberOfCardsRemoved = randomizedCards.count
+            randomizedCards.removeAll()
         }
         return numberOfCardsRemoved
     }
@@ -81,6 +81,9 @@ public class CardWingdingsHandler {
             return []
         }
 
+        let sortedDecks = decks.sorted { $0.cardsRemaining > $1.cardsRemaining }
+        
+        sortedDecks.forEach { print("Ranked: \($0.deckName)") }
         //
         // Create an empty set of cardsDrawn for each deck.
         //
@@ -107,5 +110,26 @@ public class CardWingdingsHandler {
     
     private func addToHistory(_ drawCounts: [DeckWithCount]) {
         cardDrawHistory.insert(drawCounts, at: 0)
+    }
+    
+    //
+    // Based upon the number of cards in a deck, this function will return a favorability
+    // rating for each deck. This value should be used when drawing cards from a deck
+    // so that more cards are drawn from decks with a higher number of remaining cards.
+    //
+    public func skewCardDrawByDeckSize(numberOfCardsToDraw: Int) {
+        var result: [String: Int] = [:]
+        
+//        let sortedDecks = decks.sorted { $0.cardsRemaining > $1.cardsRemaining }
+        
+        decks.forEach { deck in
+            if deck.cardsRemaining < numberOfCardsToDraw {
+                result[deck.deckName] = 0
+            }
+            
+            if deck.cardsRemaining > numberOfCardsToDraw {
+                
+            }
+        }
     }
 }
