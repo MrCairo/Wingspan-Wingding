@@ -80,7 +80,7 @@ public class CardWingdingsHandler {
             addToHistory([DeckWithCount(deckName: "", drawCount: 0)]) // This shouldn't happen but here it is in case
             return []
         }
-
+        
         let sortedDecks = decks.sorted { $0.cardsRemaining > $1.cardsRemaining }
         
         sortedDecks.forEach { print("Ranked: \($0.deckName)") }
@@ -89,19 +89,23 @@ public class CardWingdingsHandler {
         //
         decks.forEach { cardsDrawn.append(DeckWithCount(deckName: $0.deckName,
                                                         drawCount: 0)) }
-        
+                
         for _ in 0..<count {
-            // Get one random deck from the array of decks
-            if let element: DeckOfCards = decks.randomElement() {
+            // Get one random deck from the array of decks.
+            // Used to do decks.randomElement() which would just pick a deck
+            // without consideration that the deck may have more cards than other
+            // decks. getDeckFromRandomizedCards() takes into account decks with
+            // more cards than others.
+            if let whichDeck: DeckOfCards = getDeckFromRandomizedCards() {
                 // For the random deck, find it in the `cardsDrawn` array
-                guard let itemIndex = cardsDrawn.firstIndex(where: { $0.deckName == element.deckName }) else {
+                guard let itemIndex = cardsDrawn.firstIndex(where: { $0.deckName == whichDeck.deckName }) else {
                     continue
                 }
                 let deckCounter = cardsDrawn[itemIndex]
                 let total = deckCounter.drawCount + 1
                 cardsDrawn[itemIndex] = DeckWithCount(deckName: deckCounter.deckName,
                                                       drawCount: total)
-                _ = element.removeCards(1)
+                _ = whichDeck.removeCards(1)
             }
         }
 
@@ -111,25 +115,38 @@ public class CardWingdingsHandler {
     private func addToHistory(_ drawCounts: [DeckWithCount]) {
         cardDrawHistory.insert(drawCounts, at: 0)
     }
-    
+
     //
-    // Based upon the number of cards in a deck, this function will return a favorability
-    // rating for each deck. This value should be used when drawing cards from a deck
-    // so that more cards are drawn from decks with a higher number of remaining cards.
+    // Since some decks may be larger than others, the likelyhood of
+    // choosing a card from the deck with the largest number of cards
+    // is more likely. This will randomly choose a card from all the
+    // cards of all the decks and return the deck of that card.
     //
-    public func skewCardDrawByDeckSize(numberOfCardsToDraw: Int) {
-        var result: [String: Int] = [:]
+    private func getDeckFromRandomizedCards() -> DeckOfCards? {
+        let totalCards = decks.reduce(0) { $0 + $1.cardsRemaining }
+        var cardSets: [Range<Int>] = []
         
-//        let sortedDecks = decks.sorted { $0.cardsRemaining > $1.cardsRemaining }
-        
+        var runningCardCount = 0
+      
+        //
+        // cardSets represent a range of cards for a specific deck of cards.
+        //
         decks.forEach { deck in
-            if deck.cardsRemaining < numberOfCardsToDraw {
-                result[deck.deckName] = 0
-            }
-            
-            if deck.cardsRemaining > numberOfCardsToDraw {
-                
+            if deck.cardsRemaining > 0 {
+                cardSets.append(Range(runningCardCount...(runningCardCount + deck.cardsRemaining - 1)))
+                runningCardCount += deck.cardsRemaining
             }
         }
+        
+//        if runningCardCount != totalCards {
+//            fatalError()
+//        }
+        
+        let pick = Int.random(in: 0..<totalCards)
+        if let whichDeck = cardSets.firstIndex(where: { $0.contains(pick) }) {
+            return decks[whichDeck]
+        }
+        
+        return nil
     }
 }
