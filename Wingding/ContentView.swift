@@ -2,88 +2,77 @@
 //  ContentView.swift
 //  Wingding
 //
-//  Created by Mitch Fisher on 2/9/25.
+//  Created by Mitch Fisher on 2/25/25.
 //
 
 import SwiftUI
 
-enum CardChoice: String, CaseIterable, Identifiable {
-    var id: Self { self }
+struct CardDeckInputView: View {
+    @State var deckName: String = ""
+    @State var deckCount: String = ""
+    @State var showNumberAlert: Bool = false
     
-    case oneCard = "One"
-    case twoCards = "Two"
-    case threeCards = "Three"
-    case fourCards = "Four"
-    case fiveCards = "Five"
-}
-
-extension CardChoice {
-    var resourceName: String {
-        switch self {
-        case .oneCard: return "1-card-down"
-        case .twoCards: return "2-cards-down"
-        case .threeCards: return "3-cards-down"
-        case .fourCards: return "4-cards-down"
-        case .fiveCards: return "5-cards-down"
+    var body: some View {
+        GeometryReader { geo in
+            HStack {
+                deckNameView
+                    .frame(width: geo.size.width * 0.75, alignment: .leading)
+                deckCountView
+                    .frame(width: geo.size.width * 0.25, alignment: .trailing)
+            }
+        }
+        .alert("# of cards can't exceed 200", isPresented: $showNumberAlert) {
+            Button("OK", role: .cancel) { showNumberAlert = false }
         }
     }
     
-    var howManyCards: Int {
-        switch self {
-        case .oneCard: return 1
-        case .twoCards: return 2
-        case .threeCards: return 3
-        case .fourCards: return 4
-        case .fiveCards: return 5
+    var deckNameView: some View {
+        TextField("Deck Name",
+                  text: $deckName)
+        .onChange(of: deckName) { oldValue, newValue in
+            if newValue.count > 25 {
+                deckName = oldValue
+            }
         }
+        .textFieldStyle(RoundedBorderTextFieldStyle())
+    }
+    
+    var deckCountView: some View {
+        TextField("Count",
+                  text: $deckCount)
+        .onChange(of: deckCount) { oldValue, newValue in
+            if !newValue.isNumber || newValue == "0" {
+                deckCount = oldValue
+            }
+            if Int(newValue) ?? 0 > 200 {
+                deckCount = oldValue
+                showNumberAlert = true
+            }
+        }
+        .textFieldStyle(RoundedBorderTextFieldStyle())
     }
 }
 
+extension String {
+    var isNumber: Bool {
+        let digitsCharacters = CharacterSet(charactersIn: "0123456789")
+        return CharacterSet(charactersIn: self).isSubset(of: digitsCharacters)
+    }
+}
 
 struct ContentView: View {
+    
     var body: some View {
         NavigationStack {
             List {
-                NavigationLink {
-                    CardSelectionView()
-                } label: {
-                    Text("Select A Card")
-                }
+                CardDeckInputView()
+                CardDeckInputView()
+                CardDeckInputView()
+                CardDeckInputView()
+                CardDeckInputView()
             }
         }
+        .navigationTitle(Text("Card Deck Input"))
     }
 }
 
-struct CardSelectionView: View {
-    @State var selectedCard: CardChoice = .oneCard
-    
-    var body: some View {
-        VStack {
-            Text("Select the number of cards to draw:")
-            Text("Selected card is \(selectedCard.howManyCards)")
-        }
-        .padding()
-        cardPicker()
-            .pickerStyle(.menu)
-    }
-    
-    func cardPicker() -> some View {
-        Picker("Cards", selection: $selectedCard) {
-            ForEach(CardChoice.allCases, id: \.self) { card in
-                HStack(alignment: .center, spacing: 5.0) {
-                    Image(card.resourceName)
-                    //                        .resizable()
-                    //                        .aspectRatio(contentMode: .fit)
-                    //                        .scaleEffect(0.75)
-                    Spacer()
-                    Text(card.rawValue)
-                }
-                .tag(card)
-            }
-        }
-    }
-}
-
-#Preview {
-    ContentView()
-}
