@@ -1,0 +1,47 @@
+Goal,Set,1,2,3,4,Reverse
+[bird] in forest,core,0,1,2,3,[egg] in forest
+[bird] in grassland,core,0,1,2,3,[egg] in grassland
+[bird] in wetland,core,0,1,2,3,[egg] in wetland
+[bowl] [bird] with [egg],core,0,1,2,3,[egg] in [bowl]
+[cavity] [bird] with [egg],core,0,1,2,3,[egg] in [cavity]
+[egg] in [bowl],core,1,3,5,7,[bowl] [bird] with [egg]
+[egg] in [cavity],core,1,3,5,7,[cavity] [bird] with [egg]
+[egg] in [ground],core,1,3,5,7,[ground] [bird] with [egg]
+[egg] in [platform],core,1,3,5,7,[goal] [bird] with [platform]
+[egg] in forest,core,1,3,5,7,[bird] in forest
+[egg] in grassland,core,1,3,5,7,[bird] in grassland
+[egg] in wetland,core,1,3,5,7,[bird] in wetland
+[ground] [bird] with [egg],core,0,1,2,3,[egg] in [ground]
+[platform] [bird] with [egg],core,0,1,2,3,[egg] in [platform]
+sets of [egg][egg][egg] in [wetland][grassland][forest],core,-1,0,1,2,total [bird]
+total [bird],core,2,5,8,11,sets of [egg][egg][egg] in [wetland][grassland][forest]
+[bird_with_tucked_card] birds with tucked cards,european,-1,-1,1,2,food cost of played [bird]
+[bird] in one row,european,1,1,2,3,filled columns
+[bird] with no [egg],european,1,3,5,6,[bird] word >4 [feather]
+[bird] word >4 [feather],european,-1,0,1,2,[bird] with no [egg]
+[card] in hand,european,2,2,3,3,[wild] in personal supply
+[wild] in personal supply,european,2,1,3,3,[card] in hand
+brown powers,european,0,2,4,5,white & no powers
+filled columns,european,-1,-1,0,1,[bird] in one row
+food cost of played [bird],european,3,8,14,20,[bird_with_tucked_card] birds with tucked cards
+white & no powers,european,-1,0,1,1,brown powers
+"[action_cube_gray] cubes on ""play a bird""",oceania,1,1,1,0,[bird] worth ?3 [feather]
+[beak_pointing_left] beak pointing left,oceania,0,2,2,3,[beak_pointing_right] beak pointing right
+[beak_pointing_right] beak pointing right,oceania,0,2,2,3,[beak_pointing_left] beak pointing left
+[bird] worth ?3 [feather],oceania,0,2,2,3,"[action_cube_gray] cubes on ""play a bird"""
+[fruit] + [seed] in food cost of your birds,oceania,1,2,4,6,[invertebrate] in food cost of your birds
+[invertebrate] in food cost of your birds,oceania,1,3,5,5,[fruit] + [seed] in food cost of your birds
+[rodent] + [fish] in food cost of your birds,oceania,0,1,2,3,no goal
+no goal,oceania,[nectar],[nectar],[nectar],[nectar],[rodent] + [fish] in food cost of your birds
+[duet_token] in any one horizontal row,asia,,,,,horizontal rows with at least 1 of your [duet_token]
+[duet_token] on edge of map,asia,,,,,[duet_token] not on edge of map
+[duet_token] on [bowl] [cavity] [ground] [platform],asia,,,,,[duet_token] on [fish] [fruit] [rodent] [seed] [invertebrate]
+[duet_token] in [forest],asia,,,,,[duet_token] on pairs of matching symbols
+[duet_token] in [grassland],asia,,,,,total [duet_token] on map
+[duet_token] in [wetland],asia,,,,,fewest [duet_token] on bonus spaces
+total [duet_token] on map,asia,,,,,[duet_token] in [grassland]
+[duet_token] not on edge of map,asia,,,,,[duet_token] on edge of map
+fewest [duet_token] on bonus spaces,asia,,,,,[duet_token] in [wetland]
+[duet_token] on [fish] [fruit] [rodent] [seed] [invertebrate],asia,,,,,[duet_token] on [bowl] [cavity] [ground] [platform]
+horizontal rows with at least 1 of your [duet_token],asia,,,,,[duet_token] in any one horizontal row
+[duet_token] on pairs of matching symbols,asia,,,,,[duet_token] in [forest]

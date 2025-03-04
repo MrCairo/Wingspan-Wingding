@@ -1,0 +1,56 @@
+Bonus card,Set,Automa,Condition,VP,Explanatory text,%
+Anatomist,"core, asia",X,Birds with body parts in their names,2 to 3 birds: 3; 4+ birds: 6/7,"Body parts include back, beak, belly, bill, breast, brow, cap, chin, collar, crest, crown, ear, eye, face, foot, head, leg, mouth, nape, neck, rump, shoulder, tail, throat, toe, vent, wattle, wing",22
+Backyard Birder,core,,Birds worth less than 4 points,5 to 6 birds: 3; 6+ birds: 6,,42
+Bird Counter,core,X,Birds with a [flocking] power,2 per bird,,15
+Bird Feeder,core,X,Birds that eat [seed],5 to 7 birds: 3; 8+ birds: 7,Any bird with a [seed] symbol. The bird may also eat other kinds of food.,44
+Breeding Manager,core,,Birds that have at least 4 eggs laid on them,1 per bird,,28*
+Cartographer [swift_start_asia],"core, asia",X,Birds with geography terms in their names,2 to 3 birds: 3; 4+ birds: 7,"Terms include America, Asia, Atlantic, Australasia, Australia, Baltimore, California, Canada, Carolina, Chihuahua, Corsica, desert, East, Eurasia, Europe, forest, Himalaya, Inca, India, island, jungle, mallee, marsh, Mississippi, moor, mountain, New Holland, North, Orient, Pacific, Philippine, plains, prairie, sandhill, Savannah, scrub, sea, South, Sri Lanka, West",23
+Ecologist,core,,Birds in your habitat with the fewest birds.,2 per bird,"Ties count: If you have 3 birds in each habitat, your habitat with the fewest birds has 3 birds.",-
+Enclosure Builder,core,X,Birds with [ground] nests,4 to 5 birds: 4; 6+ birds: 7,Birds must have a [ground] or [star] nest symbol.,31
+Falconer,core,X,Birds with a [predator] power,2 per bird,,13
+Fishery Manager,core,X,Birds that eat [fish],2 to 3 birds: 3; 4+ birds: 8,Any bird with a [fish] symbol. The bird may also eat other kinds of food.,18
+Food Web Expert,core,X,Birds that eat only [invertebrate],2 per bird,Any bird that has only [invertebrate] and no other food symbols.,9
+Forester,core,X,Birds that can only live in [forest],3 to 4 birds: 4; 5 birds: 8,,24
+Historian,core,X,Birds named after a person,2 per bird,Any bird with an 's in its name.,11
+Large Bird Specialist,core,X,Birds with wingspans over 65 cm,4 to 5 birds: 3; 6+ birds: 6,,35
+Nest Box Builder,core,X,Birds with [cavity] nests,4 to 5 birds: 4; 6+ birds: 7,Birds must have a [cavity] or [star] nest symbol.,31
+Omnivore Specialist,core,X,Birds that eat [wild],2 per bird,Any bird that specifically has a [wild] symbol as part of its food cost.,16
+Oologist,core,,Birds that have at least 1 egg laid on them,7 to 8 birds: 3; 9+ birds: 6,,-
+Passerine Specialist,core,X,Birds with wingspans 30 cm or less,4 to 5 birds: 3; 6+ birds: 6,,35
+Photographer,"core, asia",X,Birds with colors in their names,4 to 5 birds: 3; 6+ birds: 6,"Colors include ash, azure, bay, black, blue, bronze, brown, cerulean, chestnut, coal, crimson, emerald, ferruginous, fire, gold, gray, green, indigo, lazuli, olive, orange, pink, plumbeous, purple, red, rose, ruby, ruddy, rufous, silver, snow, sulphur, tawny, teal, verditer, violet, white, yellow",34
+Platform Builder,core,X,Birds with [platform] nests,4 to 5 birds: 4; 6+ birds: 7,Birds must have a [platform] or [star] nest symbol.,31
+Prairie Manager,core,X,Birds that can only live in [grassland],2 to 3 birds: 3; 4+ birds: 8,,19
+Rodentologist,core,X,Birds that eat [rodent],2 per bird,Any bird with a [rodent] symbol. The bird may also eat other kinds of food.,15
+Visionary Leader,core,,Bird cards in hand at end of game,5 to 7 birds: 4; 8+ birds: 7,,-
+Viticulturalist,core,X,Birds that eat [fruit],2 to 3 birds: 3; 4+ birds: 7,Any bird with a [fruit] symbol. The bird may also eat other kinds of food.,22
+Wetland Scientist,core,X,Birds that can only live in [wetland],3 to 4 birds: 3; 5 birds: 7,,26
+Wildlife Gardener,core,X,Birds with [bowl] nests,4 to 5 birds: 4; 6+ birds: 7,Birds must have a [bowl] or [star] nest symbol.,31
+Behaviorist,european,,For each column that contains birds with 3 different power colors:,3 per column,Birds with no power count as white.,-
+Bird Bander,european,X,Birds that can live in multiple habitats,4 to 5 birds: 4; 6+ birds: 7,,31
+Citizen Scientist,european,X,Birds with tucked cards,4 to 6 birds: 3; 7+ birds: 6,,21*
+Diet Specialist,european,X,Birds with a food cost of 3 food,2 to 3 birds: 3; 4+ birds: 6,,29
+Ethologist,european,,In any one habitat:,2 per power color,Birds with no power count as white.,-
+Forest Data Analyst,oceania,,Consecutive birds in [forest] with ascending or descending wingspans,3 consecutive birds: 3; 4 consecutive birds: 5; 5 consecutive birds: 8,,-
+Grassland Data Analyst,oceania,,Consecutive birds in [grassland] with ascending or descending wingspans,3 consecutive birds: 3; 4 consecutive birds: 5; 5 consecutive birds: 8,,-
+Mechanical Engineer,oceania,,Sets of the 4 nest types / 1 set = [bowl] [cavity] [ground] [platform],One set: 3; Two sets: 8,Each star nest can be treated as any 1 nest type. No card can be part of more than 1 set.,-
+Site Selection Expert,oceania,,Columns with a matching pair or trio of nests,2 of the same nest in a column: 1; 3 of the same nest in a column: 3,"Different columns may (but need not) score using different nest types. Star nests are wild, but each counts only once.",-
+Wetland Data Analyst,oceania,,Consecutive birds in [wetland] with ascending or descending wingspans,3 consecutive birds: 3; 4 consecutive birds: 5; 5 consecutive birds: 8,,-
+Avian Theriogenologist,asia,,Birds with completely full nests,5 to 6 birds: 4; 7+ birds: 7,Birds with no egg capacity do not count toward this card.,-
+Endangered Species Protector,asia,X,Birds that all you to score or draw more bonus cards,3 each,,9
+Forest Population Monitor,asia,,Different nest types in [forest],2 to 3 types: 3; 4 types: 5; 5 types: 8,You may count each [star] nest as any other type or as a fifth type.,-
+Forest Ranger [swift_start_asia],asia,,Consecutive birds in [forest] with ascending or descending scores,3 consecutive birds: 3; 4 consecutive birds: 5; 5 consecutive birds: 8,Each bird's score must be higher than the last. You can go right to left or left to right.,-
+Grassland Population Monitor,asia,,Different nest types in [grassland],2 to 3 types: 3; 4 types: 5; 5 types: 8,You may count each [star] nest as any other type or as a fifth type.,-
+Grassland Ranger,asia,,Consecutive birds in [grassland] with ascending or descending scores,3 consecutive birds: 3; 4 consecutive birds: 5; 5 consecutive birds: 8,Each bird's score must be higher than the last. You can go right to left or left to right.,-
+Pellet Dissector,asia,X,[fish] and [rodent] tokens cached on your birds,2 to 3 cached: 3; 4+ cached: 6,,13
+Small Clutch Specialist,asia,X,Birds with an egg limit of 2 or less,5 to 7 birds: 3; 8+ birds: 7,You may include birds with no nest capacity.,44
+Wetland Population Monitor,asia,,Different nest types in [wetland],2 to 3 types: 3; 4 types: 5; 5 types: 8,You may count each [star] nest as any other type or as a fifth type.,-
+Wetland Ranger,asia,,Consecutive birds in [grassland] with ascending or descending scores,3 consecutive birds: 3; 4 consecutive birds: 5; 5 consecutive birds: 8,Each bird's score must be higher than the last. You can go right to left or left to right.,-
+Winter Feeder,asia,,Food remaining in your supply at end of game,4 to 6 food: 4; 7+ food: 7,,-
+[automa] Autwitcher,european,X,Birds that are worth 3 or 4 points,-,The automa keeps up to 2 of them (higher value first).,44
+[automa] RASPB Life Fellow,european,X,"Birds that are worth 5, 6, or 7 points",-,The automa keeps the highest valued one.,28
+[automa] Avid Asian Avian Admirer,asia,X,"Eaglet: 2 or 3 points
+Eagle: 3 or 4 points
+Eagle-Eyed Eagle: 4 or 5 points",,The Automa keeps up to 2 of them (lower value first).,-
+[automa] Rare Species Lister,asia,X,"Eaglet: 4, 5, or 6 points
+Eagle: 5, 6, or 7 points
+Eagle-Eyed Eagle: 6, 7, or 8 points",,The Automa keeps the lowest valued one.,-
