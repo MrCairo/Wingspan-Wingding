@@ -5,6 +5,7 @@
 //  Created by Mitch Fisher on 2/9/25.
 //
 
+#if UNUSED_MODULE
 import Foundation
 import Combine
 import OrderedCollections
@@ -32,9 +33,6 @@ public class DeckOfCards {
         self.cardsRemaining = totalCards
     }
 }
-
-
-public typealias CardDrawInfo = Dictionary<String, Int>
 
 ///
 /// This class is used to manage the multiple decks of cards.
@@ -136,3 +134,4 @@ public class DeckHandler {
         return nil
     }
 }
+#endif

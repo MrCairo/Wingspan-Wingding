@@ -46,7 +46,7 @@ struct CardContentView: View {
                 NavigationLink {
                     CardSelectionView()
                 } label: {
-                    Text("Select A Card")
+                    Text("Select Cards")
                 }
             }
         }

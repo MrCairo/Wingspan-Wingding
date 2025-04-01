@@ -14,6 +14,7 @@
 ///
 import Foundation
 import Combine
+import SwiftData
 
 ///
 /// Represents a single card from a deck.
@@ -40,7 +41,7 @@ public class Deck {
     public fileprivate(set) var totalCards: Int
     /// As cards are drawn from the deck, this value represents
     /// the total amount of cards remaining in the deck.
-    @Published public fileprivate(set) var cardsRemaining: Int
+    public fileprivate(set) var cardsRemaining: Int
     // An array of card inde values
     fileprivate var randomizedCards: [Int] = []
 
@@ -52,13 +53,15 @@ public class Deck {
     }
 }
 
+public typealias CardDrawInfo = Dictionary<String, Int>
+
 ///
 /// This class is used to manage the multiple decks of cards.
 /// This includes randomizing all cards in all decks, removal
 /// (or drawing) cards from the decks, and historical record
 /// of the drawn cards.
 ///
-public class DecksHandler {
+public class CardDrawHandler {
     public private(set) var cardDrawHistory: [[CardDrawInfo]] = []
     public private(set) var allCards: [Card] = []
     public let decks: [Deck]
