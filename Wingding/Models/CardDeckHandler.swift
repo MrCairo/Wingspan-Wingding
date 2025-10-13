@@ -36,7 +36,8 @@ public struct Card {
 ///    can be observed so that when a card is drawn from
 ///    the deck, the observer will be notified.
 ///
-public class Deck {
+@Model
+public class Deck: Hashable {
     public fileprivate(set) var name: String
     public fileprivate(set) var totalCards: Int
     /// As cards are drawn from the deck, this value represents

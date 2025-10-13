@@ -15,9 +15,10 @@ struct WingdingApp: App {
         WindowGroup {
             NavigationStack {
                 NavigationLink("Manage Decks") {
-                    ContentView()
+                    ManageDeckContentView()
                 }
             }
+            .navigationTitle("Wingdings")
             .modelContainer(for: [Deck.self])
         }
     }
