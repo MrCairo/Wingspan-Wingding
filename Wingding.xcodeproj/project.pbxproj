@@ -33,9 +33,24 @@
 		4C1E02F42D58E0570003C4B7 /* WingdingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WingdingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4CD83F5E2D77EC740084A6D2 /* Exceptions for "Wingding" folder in "Wingding" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Data/wingspan-20221201-Birds.csv",
+				"Data/wingspan-20221201-Bonus.csv",
+				"Data/wingspan-20221201-Goals.csv",
+			);
+			target = 4C1E02D92D58E0560003C4B7 /* Wingding */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4C1E02DC2D58E0560003C4B7 /* Wingding */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4CD83F5E2D77EC740084A6D2 /* Exceptions for "Wingding" folder in "Wingding" target */,
+			);
 			path = Wingding;
 			sourceTree = "<group>";
 		};

@@ -1,0 +1,461 @@
+[
+    {
+        "Bonus card": "Anatomist",
+        "Set": "core, asia",
+        "Automa": "X",
+        "Condition": "Birds with body parts in their names",
+        "VP": "2 to 3 birds: 3; 4+ birds: 6/7",
+        "Explanatory text": "Body parts include back, beak, belly, bill, breast, brow, cap, chin, collar, crest, crown, ear, eye, face, foot, head, leg, mouth, nape, neck, rump, shoulder, tail, throat, toe, vent, wattle, wing",
+        "%": "22"
+    },
+    {
+        "Bonus card": "Backyard Birder",
+        "Set": "core",
+        "Automa": "",
+        "Condition": "Birds worth less than 4 points",
+        "VP": "5 to 6 birds: 3; 6+ birds: 6",
+        "Explanatory text": "",
+        "%": "42"
+    },
+    {
+        "Bonus card": "Bird Counter",
+        "Set": "core",
+        "Automa": "X",
+        "Condition": "Birds with a [flocking] power",
+        "VP": "2 per bird",
+        "Explanatory text": "",
+        "%": "15"
+    },
+    {
+        "Bonus card": "Bird Feeder",
+        "Set": "core",
+        "Automa": "X",
+        "Condition": "Birds that eat [seed]",
+        "VP": "5 to 7 birds: 3; 8+ birds: 7",
+        "Explanatory text": "Any bird with a [seed] symbol. The bird may also eat other kinds of food.",
+        "%": "44"
+    },
+    {
+        "Bonus card": "Breeding Manager",
+        "Set": "core",
+        "Automa": "",
+        "Condition": "Birds that have at least 4 eggs laid on them",
+        "VP": "1 per bird",
+        "Explanatory text": "",
+        "%": "28*"
+    },
+    {
+        "Bonus card": "Cartographer [swift_start_asia]",
+        "Set": "core, asia",
+        "Automa": "X",
+        "Condition": "Birds with geography terms in their names",
+        "VP": "2 to 3 birds: 3; 4+ birds: 7",
+        "Explanatory text": "Terms include America, Asia, Atlantic, Australasia, Australia, Baltimore, California, Canada, Carolina, Chihuahua, Corsica, desert, East, Eurasia, Europe, forest, Himalaya, Inca, India, island, jungle, mallee, marsh, Mississippi, moor, mountain, New Holland, North, Orient, Pacific, Philippine, plains, prairie, sandhill, Savannah, scrub, sea, South, Sri Lanka, West",
+        "%": "23"
+    },
+    {
+        "Bonus card": "Ecologist",
+        "Set": "core",
+        "Automa": "",
+        "Condition": "Birds in your habitat with the fewest birds.",
+        "VP": "2 per bird",
+        "Explanatory text": "Ties count: If you have 3 birds in each habitat, your habitat with the fewest birds has 3 birds.",
+        "%": "-"
+    },
+    {
+        "Bonus card": "Enclosure Builder",
+        "Set": "core",
+        "Automa": "X",
+        "Condition": "Birds with [ground] nests",
+        "VP": "4 to 5 birds: 4; 6+ birds: 7",
+        "Explanatory text": "Birds must have a [ground] or [star] nest symbol.",
+        "%": "31"
+    },
+    {
+        "Bonus card": "Falconer",
+        "Set": "core",
+        "Automa": "X",
+        "Condition": "Birds with a [predator] power",
+        "VP": "2 per bird",
+        "Explanatory text": "",
+        "%": "13"
+    },
+    {
+        "Bonus card": "Fishery Manager",
+        "Set": "core",
+        "Automa": "X",
+        "Condition": "Birds that eat [fish]",
+        "VP": "2 to 3 birds: 3; 4+ birds: 8",
+        "Explanatory text": "Any bird with a [fish] symbol. The bird may also eat other kinds of food.",
+        "%": "18"
+    },
+    {
+        "Bonus card": "Food Web Expert",
+        "Set": "core",
+        "Automa": "X",
+        "Condition": "Birds that eat only [invertebrate]",
+        "VP": "2 per bird",
+        "Explanatory text": "Any bird that has only [invertebrate] and no other food symbols.",
+        "%": "9"
+    },
+    {
+        "Bonus card": "Forester",
+        "Set": "core",
+        "Automa": "X",
+        "Condition": "Birds that can only live in [forest]",
+        "VP": "3 to 4 birds: 4; 5 birds: 8",
+        "Explanatory text": "",
+        "%": "24"
+    },
+    {
+        "Bonus card": "Historian",
+        "Set": "core",
+        "Automa": "X",
+        "Condition": "Birds named after a person",
+        "VP": "2 per bird",
+        "Explanatory text": "Any bird with an 's in its name.",
+        "%": "11"
+    },
+    {
+        "Bonus card": "Large Bird Specialist",
+        "Set": "core",
+        "Automa": "X",
+        "Condition": "Birds with wingspans over 65 cm",
+        "VP": "4 to 5 birds: 3; 6+ birds: 6",
+        "Explanatory text": "",
+        "%": "35"
+    },
+    {
+        "Bonus card": "Nest Box Builder",
+        "Set": "core",
+        "Automa": "X",
+        "Condition": "Birds with [cavity] nests",
+        "VP": "4 to 5 birds: 4; 6+ birds: 7",
+        "Explanatory text": "Birds must have a [cavity] or [star] nest symbol.",
+        "%": "31"
+    },
+    {
+        "Bonus card": "Omnivore Specialist",
+        "Set": "core",
+        "Automa": "X",
+        "Condition": "Birds that eat [wild]",
+        "VP": "2 per bird",
+        "Explanatory text": "Any bird that specifically has a [wild] symbol as part of its food cost.",
+        "%": "16"
+    },
+    {
+        "Bonus card": "Oologist",
+        "Set": "core",
+        "Automa": "",
+        "Condition": "Birds that have at least 1 egg laid on them",
+        "VP": "7 to 8 birds: 3; 9+ birds: 6",
+        "Explanatory text": "",
+        "%": "-"
+    },
+    {
+        "Bonus card": "Passerine Specialist",
+        "Set": "core",
+        "Automa": "X",
+        "Condition": "Birds with wingspans 30 cm or less",
+        "VP": "4 to 5 birds: 3; 6+ birds: 6",
+        "Explanatory text": "",
+        "%": "35"
+    },
+    {
+        "Bonus card": "Photographer",
+        "Set": "core, asia",
+        "Automa": "X",
+        "Condition": "Birds with colors in their names",
+        "VP": "4 to 5 birds: 3; 6+ birds: 6",
+        "Explanatory text": "Colors include ash, azure, bay, black, blue, bronze, brown, cerulean, chestnut, coal, crimson, emerald, ferruginous, fire, gold, gray, green, indigo, lazuli, olive, orange, pink, plumbeous, purple, red, rose, ruby, ruddy, rufous, silver, snow, sulphur, tawny, teal, verditer, violet, white, yellow",
+        "%": "34"
+    },
+    {
+        "Bonus card": "Platform Builder",
+        "Set": "core",
+        "Automa": "X",
+        "Condition": "Birds with [platform] nests",
+        "VP": "4 to 5 birds: 4; 6+ birds: 7",
+        "Explanatory text": "Birds must have a [platform] or [star] nest symbol.",
+        "%": "31"
+    },
+    {
+        "Bonus card": "Prairie Manager",
+        "Set": "core",
+        "Automa": "X",
+        "Condition": "Birds that can only live in [grassland]",
+        "VP": "2 to 3 birds: 3; 4+ birds: 8",
+        "Explanatory text": "",
+        "%": "19"
+    },
+    {
+        "Bonus card": "Rodentologist",
+        "Set": "core",
+        "Automa": "X",
+        "Condition": "Birds that eat [rodent]",
+        "VP": "2 per bird",
+        "Explanatory text": "Any bird with a [rodent] symbol. The bird may also eat other kinds of food.",
+        "%": "15"
+    },
+    {
+        "Bonus card": "Visionary Leader",
+        "Set": "core",
+        "Automa": "",
+        "Condition": "Bird cards in hand at end of game",
+        "VP": "5 to 7 birds: 4; 8+ birds: 7",
+        "Explanatory text": "",
+        "%": "-"
+    },
+    {
+        "Bonus card": "Viticulturalist",
+        "Set": "core",
+        "Automa": "X",
+        "Condition": "Birds that eat [fruit]",
+        "VP": "2 to 3 birds: 3; 4+ birds: 7",
+        "Explanatory text": "Any bird with a [fruit] symbol. The bird may also eat other kinds of food.",
+        "%": "22"
+    },
+    {
+        "Bonus card": "Wetland Scientist",
+        "Set": "core",
+        "Automa": "X",
+        "Condition": "Birds that can only live in [wetland]",
+        "VP": "3 to 4 birds: 3; 5 birds: 7",
+        "Explanatory text": "",
+        "%": "26"
+    },
+    {
+        "Bonus card": "Wildlife Gardener",
+        "Set": "core",
+        "Automa": "X",
+        "Condition": "Birds with [bowl] nests",
+        "VP": "4 to 5 birds: 4; 6+ birds: 7",
+        "Explanatory text": "Birds must have a [bowl] or [star] nest symbol.",
+        "%": "31"
+    },
+    {
+        "Bonus card": "Behaviorist",
+        "Set": "european",
+        "Automa": "",
+        "Condition": "For each column that contains birds with 3 different power colors:",
+        "VP": "3 per column",
+        "Explanatory text": "Birds with no power count as white.",
+        "%": "-"
+    },
+    {
+        "Bonus card": "Bird Bander",
+        "Set": "european",
+        "Automa": "X",
+        "Condition": "Birds that can live in multiple habitats",
+        "VP": "4 to 5 birds: 4; 6+ birds: 7",
+        "Explanatory text": "",
+        "%": "31"
+    },
+    {
+        "Bonus card": "Citizen Scientist",
+        "Set": "european",
+        "Automa": "X",
+        "Condition": "Birds with tucked cards",
+        "VP": "4 to 6 birds: 3; 7+ birds: 6",
+        "Explanatory text": "",
+        "%": "21*"
+    },
+    {
+        "Bonus card": "Diet Specialist",
+        "Set": "european",
+        "Automa": "X",
+        "Condition": "Birds with a food cost of 3 food",
+        "VP": "2 to 3 birds: 3; 4+ birds: 6",
+        "Explanatory text": "",
+        "%": "29"
+    },
+    {
+        "Bonus card": "Ethologist",
+        "Set": "european",
+        "Automa": "",
+        "Condition": "In any one habitat:",
+        "VP": "2 per power color",
+        "Explanatory text": "Birds with no power count as white.",
+        "%": "-"
+    },
+    {
+        "Bonus card": "Forest Data Analyst",
+        "Set": "oceania",
+        "Automa": "",
+        "Condition": "Consecutive birds in [forest] with ascending or descending wingspans",
+        "VP": "3 consecutive birds: 3; 4 consecutive birds: 5; 5 consecutive birds: 8",
+        "Explanatory text": "",
+        "%": "-"
+    },
+    {
+        "Bonus card": "Grassland Data Analyst",
+        "Set": "oceania",
+        "Automa": "",
+        "Condition": "Consecutive birds in [grassland] with ascending or descending wingspans",
+        "VP": "3 consecutive birds: 3; 4 consecutive birds: 5; 5 consecutive birds: 8",
+        "Explanatory text": "",
+        "%": "-"
+    },
+    {
+        "Bonus card": "Mechanical Engineer",
+        "Set": "oceania",
+        "Automa": "",
+        "Condition": "Sets of the 4 nest types / 1 set = [bowl] [cavity] [ground] [platform]",
+        "VP": "One set: 3; Two sets: 8",
+        "Explanatory text": "Each star nest can be treated as any 1 nest type. No card can be part of more than 1 set.",
+        "%": "-"
+    },
+    {
+        "Bonus card": "Site Selection Expert",
+        "Set": "oceania",
+        "Automa": "",
+        "Condition": "Columns with a matching pair or trio of nests",
+        "VP": "2 of the same nest in a column: 1; 3 of the same nest in a column: 3",
+        "Explanatory text": "Different columns may (but need not) score using different nest types. Star nests are wild, but each counts only once.",
+        "%": "-"
+    },
+    {
+        "Bonus card": "Wetland Data Analyst",
+        "Set": "oceania",
+        "Automa": "",
+        "Condition": "Consecutive birds in [wetland] with ascending or descending wingspans",
+        "VP": "3 consecutive birds: 3; 4 consecutive birds: 5; 5 consecutive birds: 8",
+        "Explanatory text": "",
+        "%": "-"
+    },
+    {
+        "Bonus card": "Avian Theriogenologist",
+        "Set": "asia",
+        "Automa": "",
+        "Condition": "Birds with completely full nests",
+        "VP": "5 to 6 birds: 4; 7+ birds: 7",
+        "Explanatory text": "Birds with no egg capacity do not count toward this card.",
+        "%": "-"
+    },
+    {
+        "Bonus card": "Endangered Species Protector",
+        "Set": "asia",
+        "Automa": "X",
+        "Condition": "Birds that all you to score or draw more bonus cards",
+        "VP": "3 each",
+        "Explanatory text": "",
+        "%": "9"
+    },
+    {
+        "Bonus card": "Forest Population Monitor",
+        "Set": "asia",
+        "Automa": "",
+        "Condition": "Different nest types in [forest]",
+        "VP": "2 to 3 types: 3; 4 types: 5; 5 types: 8",
+        "Explanatory text": "You may count each [star] nest as any other type or as a fifth type.",
+        "%": "-"
+    },
+    {
+        "Bonus card": "Forest Ranger [swift_start_asia]",
+        "Set": "asia",
+        "Automa": "",
+        "Condition": "Consecutive birds in [forest] with ascending or descending scores",
+        "VP": "3 consecutive birds: 3; 4 consecutive birds: 5; 5 consecutive birds: 8",
+        "Explanatory text": "Each bird's score must be higher than the last. You can go right to left or left to right.",
+        "%": "-"
+    },
+    {
+        "Bonus card": "Grassland Population Monitor",
+        "Set": "asia",
+        "Automa": "",
+        "Condition": "Different nest types in [grassland]",
+        "VP": "2 to 3 types: 3; 4 types: 5; 5 types: 8",
+        "Explanatory text": "You may count each [star] nest as any other type or as a fifth type.",
+        "%": "-"
+    },
+    {
+        "Bonus card": "Grassland Ranger",
+        "Set": "asia",
+        "Automa": "",
+        "Condition": "Consecutive birds in [grassland] with ascending or descending scores",
+        "VP": "3 consecutive birds: 3; 4 consecutive birds: 5; 5 consecutive birds: 8",
+        "Explanatory text": "Each bird's score must be higher than the last. You can go right to left or left to right.",
+        "%": "-"
+    },
+    {
+        "Bonus card": "Pellet Dissector",
+        "Set": "asia",
+        "Automa": "X",
+        "Condition": "[fish] and [rodent] tokens cached on your birds",
+        "VP": "2 to 3 cached: 3; 4+ cached: 6",
+        "Explanatory text": "",
+        "%": "13"
+    },
+    {
+        "Bonus card": "Small Clutch Specialist",
+        "Set": "asia",
+        "Automa": "X",
+        "Condition": "Birds with an egg limit of 2 or less",
+        "VP": "5 to 7 birds: 3; 8+ birds: 7",
+        "Explanatory text": "You may include birds with no nest capacity.",
+        "%": "44"
+    },
+    {
+        "Bonus card": "Wetland Population Monitor",
+        "Set": "asia",
+        "Automa": "",
+        "Condition": "Different nest types in [wetland]",
+        "VP": "2 to 3 types: 3; 4 types: 5; 5 types: 8",
+        "Explanatory text": "You may count each [star] nest as any other type or as a fifth type.",
+        "%": "-"
+    },
+    {
+        "Bonus card": "Wetland Ranger",
+        "Set": "asia",
+        "Automa": "",
+        "Condition": "Consecutive birds in [grassland] with ascending or descending scores",
+        "VP": "3 consecutive birds: 3; 4 consecutive birds: 5; 5 consecutive birds: 8",
+        "Explanatory text": "Each bird's score must be higher than the last. You can go right to left or left to right.",
+        "%": "-"
+    },
+    {
+        "Bonus card": "Winter Feeder",
+        "Set": "asia",
+        "Automa": "",
+        "Condition": "Food remaining in your supply at end of game",
+        "VP": "4 to 6 food: 4; 7+ food: 7",
+        "Explanatory text": "",
+        "%": "-"
+    },
+    {
+        "Bonus card": "[automa] Autwitcher",
+        "Set": "european",
+        "Automa": "X",
+        "Condition": "Birds that are worth 3 or 4 points",
+        "VP": "-",
+        "Explanatory text": "The automa keeps up to 2 of them (higher value first).",
+        "%": "44"
+    },
+    {
+        "Bonus card": "[automa] RASPB Life Fellow",
+        "Set": "european",
+        "Automa": "X",
+        "Condition": "Birds that are worth 5, 6, or 7 points",
+        "VP": "-",
+        "Explanatory text": "The automa keeps the highest valued one.",
+        "%": "28"
+    },
+    {
+        "Bonus card": "[automa] Avid Asian Avian Admirer",
+        "Set": "asia",
+        "Automa": "X",
+        "Condition": "Eaglet: 2 or 3 points\nEagle: 3 or 4 points\nEagle-Eyed Eagle: 4 or 5 points",
+        "VP": "",
+        "Explanatory text": "The Automa keeps up to 2 of them (lower value first).",
+        "%": "-"
+    },
+    {
+        "Bonus card": "[automa] Rare Species Lister",
+        "Set": "asia",
+        "Automa": "X",
+        "Condition": "Eaglet: 4, 5, or 6 points\nEagle: 5, 6, or 7 points\nEagle-Eyed Eagle: 6, 7, or 8 points",
+        "VP": "",
+        "Explanatory text": "The Automa keeps the lowest valued one.",
+        "%": "-"
+    }
+]
